@@ -1,0 +1,9 @@
+@import "../styles/reference.css";
+/* Local-font equivalents of the reference's next/font variables. */
+:root {
+  --font-heading: "monumentHeading", "monumentHeading Fallback";
+  --font-heading-neue: "neueHeading", "neueHeading Fallback";
+  --font-body-neueral: "neueralBody", "neueralBody Fallback";
+  --font-body-neueral-mono: "neueralMono", "neueralMono Fallback";
+}
+/* Add your overrides here. Preserve reference.css for matching motion. */

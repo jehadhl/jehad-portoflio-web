@@ -1,0 +1,221 @@
+{
+  "site": {
+    "name": "Jehad Hlewi",
+    "navigation": [
+      {
+        "label": "À propos",
+        "href": "#about"
+      },
+      {
+        "label": "Outils",
+        "href": "#tools"
+      },
+      {
+        "label": "Projets",
+        "href": "#work"
+      },
+      {
+        "label": "Créons ensemble",
+        "href": "mailto:jehad.hlewi22@gmail.com",
+        "className": "topbar-link-create"
+      }
+    ]
+  },
+  "hero": {
+    "titleTop": "Créatif",
+    "titleBottom": "Développeur",
+    "name": ["Robert", "Aperios"],
+    "aboutLabel": "À propos",
+    "locationPrefix": "Lieu",
+    "locations": [
+      {
+        "label": "Émirats",
+        "timeZone": "Asia/Dubai"
+      },
+      {
+        "label": "Maroc",
+        "timeZone": "Africa/Casablanca"
+      },
+      {
+        "label": "Canada",
+        "timeZone": "America/Toronto"
+      }
+    ],
+    "music": {
+      "tracks": [
+        {
+          "src": "/music/Darling - Tulipa Moves - 03 So Did We.mp3",
+          "artist": "Darling - Tulipa Moves",
+          "title": "So Did We",
+          "reactiveMode": "detail"
+        },
+        {
+          "src": "/music/The Wamdue Kids - In My Soul (3c Deep Mix) - TheDrMiam.mp3",
+          "artist": "The Wamdue Kids",
+          "title": "In My Soul (3c Deep Mix)",
+          "reactiveMode": "detail"
+        },
+        {
+          "src": "/music/SP101 - Dreamstate.mp3",
+          "artist": "SP101",
+          "title": "Dreamstate",
+          "reactiveMode": "thump"
+        }
+      ]
+    },
+    "copy": "CONCEVOIR DES EXPÉRIENCES NUMÉRIQUES RÉFLÉCHIES POUR LE WEB ET LE MOBILE, EN RASSEMBLANT UN DESIGN CRÉATIF, DES SYSTÈMES FIABLES ET L'IA. TRANSFORMER LES IDÉES EN PRODUITS COMPLETS, BEAUX, FONCTIONNELS ET SIMPLES D'UTILISATION."
+  },
+  "about": {
+    "sectionId": "about",
+    "headings": {
+      "left": "Des idées réfléchies façonnées avec sens",
+      "right": "Des systèmes audacieux conçus pour capter l'attention"
+    },
+    "gallery": {
+      "workMark": "Projets",
+      "images": [
+        {
+          "src": "/media/side-1.webp",
+          "alt": "Side portrait one"
+        },
+        {
+          "src": "/media/me-2.webp",
+          "alt": "Portrait of Robert Aperios"
+        },
+        {
+          "src": "/media/side-2.webp",
+          "alt": "Side portrait two"
+        }
+      ]
+    },
+    "tools": {
+      "label": "Outils",
+      "items": [
+        {
+          "index": "00",
+          "title": "Runman",
+          "subtitle": "Marque animée",
+          "lottie": "/assets/lottie/runman02.json",
+          "copy": "Une marque animée légère en boucle utilisée comme introduction pour la sélection d'outils. Elle donne le rythme avant les études vidéo, gardant la section vivante dès la première image."
+        },
+        {
+          "index": "01",
+          "title": "Chroma Warp",
+          "subtitle": "Typographie et médias",
+          "video": "/assets/Clips/image-text.mp4",
+          "copy": "Une étude de mouvement mêlant texture d'image et typographie vivante. Conçu comme un outil visuel réutilisable pour des tests rapides de direction artistique, combinant médias en couches, typographie réactive et timing scripté."
+        },
+        {
+          "index": "02",
+          "title": "Split Mask",
+          "subtitle": "Révélation interactive",
+          "video": "/assets/Clips/open.mp4",
+          "copy": "Un prototype d'interaction compact pour ouvrir, masquer et révéler du contenu. Conçu autour d'états de mouvement nets, d'une logique de mise en page flexible et d'une structure simple réutilisable."
+        },
+        {
+          "index": "03",
+          "title": "Text Maze",
+          "subtitle": "Système génératif",
+          "video": "/assets/Clips/remix-maze.mp4",
+          "copy": "Un outil de remix en forme de labyrinthe conçu pour des variations visuelles ludiques. Il utilise du scripting front-end moderne, un comportement de mise en page procédural et des règles graphiques adaptables."
+        },
+        {
+          "index": "04",
+          "index": "04",
+          "title": "Whale",
+          "subtitle": "Test de mouvement 3D",
+          "video": "/assets/Clips/whale.mp4",
+          "copy": "Une expérience de mouvement sculptural axée sur le poids, la profondeur et le mouvement atmosphérique. Conçue comme un test visuel adapté au navigateur avec des scripts modernes et un rythme d'animation contrôlé."
+        }
+      ]
+    },
+    "skills": [
+      {
+        "index": "01",
+        "title": "Applications Web",
+        "copy": "CONCEPTION D'APPLICATIONS WEB RÉACTIVES QUI SONT ESTHÉTIQUES, FLUIDES ET SIMPLIFIENT LES TÂCHES QUOTIDIENNES."
+      },
+      {
+        "index": "02",
+        "title": "Systèmes back-end",
+        "copy": "CRÉATION DES SYSTÈMES QUI GÈRENT LES DONNÉES, CONNECTENT LES SERVICES ET ASSURENT LA STABILITÉ."
+      },
+      {
+        "index": "03",
+        "title": "Applications mobiles",
+        "copy": "DÉVELOPPEMENT D'APPLIS IOS ET ANDROID AVEC UNE ATTENTION AUX DÉTAILS POUR UNE EXPÉRIENCE FLUIDE."
+      },
+      {
+        "index": "04",
+        "title": "Intégration IA",
+        "copy": "INTÉGRATION DE LLM, RAG ET AGENTS IA POUR AIDER LES UTILISATEURS À TROUVER DES RÉPONSES ET AUTOMATISER LES FLUX DE TRAVAIL."
+      },
+      {
+        "index": "05",
+        "title": "De l'idée au lancement",
+        "copy": "TRANSFORMER LES IDÉES EN PRODUITS DIGITAUX COMPLETS, DE LA PLANIFICATION AU LANCEMENT ET À L'AMÉLIORATION CONTINUE."
+      }
+    ]
+  },
+  "projects": {
+    "items": [
+      {
+        "index": "01",
+        "title": "TIME2TRAVEL",
+        "subtitle": "APPLICATION DE RÉSERVATION DE VOYAGES CRYPTO",
+        "url": "https://time2travel.biz/",
+        "image": "/mock-work-images/image-1.webp",
+        "alt": "Site TIME2TRAVEL affiché sur un écran de bureau",
+        "copy": "UNE APPLICATION DE RÉSERVATION DE VOYAGES AIDANT LES UTILISATEURS À RECHERCHER HÔTELS ET VOLS, GÉRER LES RÉSERVATIONS ET PAYER EN CRYPTO. CONÇUE POUR LE BUREAU ET LE MOBILE."
+      },
+      {
+        "index": "02",
+        "title": "BFICOIN",
+        "subtitle": "SITE D'ÉCOSYSTÈME DE CRYPTO-MONNAIE",
+        "url": "https://bfic.netlify.app/",
+        "image": "/mock-work-images/image-2.webp",
+        "alt": "Site BFICOIN affiché sur un écran de bureau",
+        "copy": "UN SITE PRÉSENTANT BFICOIN ET SON ÉCOSYSTÈME CRYPTO. VISUELS AUDACIEUX ET NAVIGATION CLAIRE POUR EXPLIQUER L'UTILITÉ DE LA MONNAIE."
+      },
+      {
+        "index": "03",
+        "title": "SPARKIT",
+        "subtitle": "APPLICATION WEB DE MODE PROPULSÉE PAR L'IA",
+        "url": "https://www.sparkit.world/",
+        "image": "/mock-work-images/image-3.webp",
+        "alt": "Site SPARKIT affiché sur un écran de bureau",
+        "copy": "UNE PLATEFORME WEB CONNECTANT CRÉATEURS DE MODE ET ACHETEURS. LES UTILISATEURS EXPLORERONT DES COLLECTIONS ET ACHÈTERONT, TANDIS QUE LES CRÉATEURS UTILISENT DES OUTILS IA POUR CONCRÉTISER LEURS IDÉES."
+      },
+      {
+        "index": "04",
+        "index": "04",
+        "title": "SPARKIT",
+        "subtitle": "APPLICATION MOBILE DE MODE PROPULSÉE PAR L'IA",
+        "url": "https://www.sparkit.world/",
+        "image": "/mock-work-images/image-4.webp",
+        "alt": "Site SPARKIT affiché sur un appareil mobile",
+        "copy": "UNE APPLI IOS ET ANDROID AIDANT LES CRÉATEURS À TRANSFORMER LEURS IDÉES EN MARQUES. SPARKIT COMBINE DESIGN ASSISTÉ PAR IA, CONNEXIONS DE PRODUCTION ET MARCHÉ INTÉGRÉ."
+      }
+    ]
+  },
+  "quote": {
+    "text": "\"Les cloches d'alarme sonnent, Willie\""
+  },
+  "footer": {
+    "wordmark": "R/JEHAD",
+    "lead": "Laissez-moi développer votre prochain projet !",
+    "sublead": "C'est celui auquel vous ne vous attendiez pas — pas sous les projecteurs, mais sur le bord du chemin.",
+    "linksTitle": "Liens",
+    "contactTitle": "Contact",
+    "emailLabel": "Adresse e-mail",
+    "emailPlaceholder": "E-mail",
+    "sendLabel": "Envoyer",
+    "languageTitle": "Langue",
+    "contactLinks": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/je7d"
+      }
+    ]
+  }
+}

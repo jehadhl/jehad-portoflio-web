@@ -1,0 +1,219 @@
+{
+  "site": {
+    "name": "Jehad Hlewi",
+    "navigation": [
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Tools",
+        "href": "#tools"
+      },
+      {
+        "label": "Work",
+        "href": "#work"
+      },
+      {
+        "label": "Let's create",
+        "href": "mailto:jehad.hlewi22@gmail.com",
+        "className": "topbar-link-create"
+      }
+    ]
+  },
+  "hero": {
+    "titleTop": "Creative",
+    "titleBottom": "Developer",
+    "name": ["Robert", "Aperios"],
+    "aboutLabel": "About",
+    "locationPrefix": "Location",
+    "locations": [
+      {
+        "label": "UAE",
+        "timeZone": "Asia/Dubai"
+      },
+      {
+        "label": "Morocco",
+        "timeZone": "Africa/Casablanca"
+      },
+      {
+        "label": "Canada",
+        "timeZone": "America/Toronto"
+      }
+    ],
+    "music": {
+      "tracks": [
+        {
+          "src": "/music/Darling - Tulipa Moves - 03 So Did We.mp3",
+          "artist": "Darling - Tulipa Moves",
+          "title": "So Did We",
+          "reactiveMode": "detail"
+        },
+        {
+          "src": "/music/The Wamdue Kids - In My Soul (3c Deep Mix) - TheDrMiam.mp3",
+          "artist": "The Wamdue Kids",
+          "title": "In My Soul (3c Deep Mix)",
+          "reactiveMode": "detail"
+        },
+        {
+          "src": "/music/SP101 - Dreamstate.mp3",
+          "artist": "SP101",
+          "title": "Dreamstate",
+          "reactiveMode": "thump"
+        }
+      ]
+    },
+    "copy": "BUILDING THOUGHTFUL DIGITAL EXPERIENCES FOR WEB AND MOBILE, BRINGING TOGETHER CREATIVE DESIGN, RELIABLE SYSTEMS, AND AI. TURNING IDEAS INTO COMPLETE PRODUCTS THAT LOOK GOOD, WORK WELL, AND FEEL SIMPLE TO USE."
+  },
+  "about": {
+    "sectionId": "about",
+    "headings": {
+      "left": "Thoughtful ideas shaped with meaning",
+      "right": "Bold systems built to hold attention"
+    },
+    "gallery": {
+      "workMark": "Work",
+      "images": [
+        {
+          "src": "/media/side-1.webp",
+          "alt": "Side portrait one"
+        },
+        {
+          "src": "/media/me-2.webp",
+          "alt": "Portrait of Robert Aperios"
+        },
+        {
+          "src": "/media/side-2.webp",
+          "alt": "Side portrait two"
+        }
+      ]
+    },
+    "tools": {
+      "label": "Tools",
+      "items": [
+        {
+          "index": "00",
+          "title": "Runman",
+          "subtitle": "Motion mark",
+          "lottie": "/assets/lottie/runman02.json",
+          "copy": "A lightweight looping motion mark used as a lead-in for the tool reel. It sets the pace before the video studies begin, keeping the section feeling alive from the first frame."
+        },
+        {
+          "index": "01",
+          "title": "Chroma Warp",
+          "subtitle": "Type and media",
+          "video": "/assets/Clips/image-text.mp4",
+          "copy": "A motion study mixing image texture with live typography. Built as a reusable visual tool for quick art direction tests, combining layered media, responsive type, and script-controlled timing."
+        },
+        {
+          "index": "02",
+          "title": "Split Mask",
+          "subtitle": "Interactive reveal",
+          "video": "/assets/Clips/open.mp4",
+          "copy": "A compact interaction prototype for opening, masking, and revealing content. Designed around clean motion states, flexible layout logic, and a simple structure that can be reused across digital pieces."
+        },
+        {
+          "index": "03",
+          "title": "Text Maze",
+          "subtitle": "Generative system",
+          "video": "/assets/Clips/remix-maze.mp4",
+          "copy": "A maze-like remix tool built for playful visual variation. It uses modern front-end scripting, procedural layout behavior, and graphic rules that can shift quickly without losing the overall system."
+        },
+        {
+          "index": "04",
+          "title": "Whale",
+          "subtitle": "3D motion test",
+          "video": "/assets/Clips/whale.mp4",
+          "copy": "A sculptural motion experiment focused on weight, depth, and atmospheric movement. Built as a browser-friendly visual test using modern scripts and controlled animation pacing."
+        }
+      ]
+    },
+    "skills": [
+      {
+        "index": "01",
+        "title": "Web Apps",
+        "copy": "BUILDING RESPONSIVE WEB APPLICATIONS THAT LOOK GOOD, WORK SMOOTHLY, AND MAKE EVERYDAY TASKS EASIER."
+      },
+      {
+        "index": "02",
+        "title": "Backend Systems",
+        "copy": "CREATING THE SYSTEMS BEHIND YOUR PRODUCT TO MANAGE DATA, CONNECT SERVICES, AND KEEP EVERYTHING RUNNING SMOOTHLY."
+      },
+      {
+        "index": "03",
+        "title": "Mobile Apps",
+        "copy": "DEVELOPING IOS AND ANDROID APPS WITH THOUGHTFUL DETAILS AND A SMOOTH EXPERIENCE ON THE GO."
+      },
+      {
+        "index": "04",
+        "title": "AI Integration",
+        "copy": "INTEGRATING LLMS, RAG, AND AI AGENTS TO HELP USERS FIND ANSWERS AND AUTOMATE WORKFLOWS."
+      },
+      {
+        "index": "05",
+        "title": "Idea To Launch",
+        "copy": "TURNING IDEAS INTO COMPLETE DIGITAL PRODUCTS, FROM PLANNING AND DEVELOPMENT TO LAUNCH AND CONTINUED IMPROVEMENT."
+      }
+    ]
+  },
+  "projects": {
+    "items": [
+      {
+        "index": "01",
+        "title": "TIME2TRAVEL",
+        "subtitle": "CRYPTO TRAVEL BOOKING WEB APP",
+        "url": "https://time2travel.biz/",
+        "image": "/mock-work-images/image-1.webp",
+        "alt": "TIME2TRAVEL website shown on a desktop monitor",
+        "copy": "A TRAVEL BOOKING WEB APP THAT HELPS USERS SEARCH FOR HOTELS AND FLIGHTS, MANAGE BOOKINGS, AND PAY WITH CRYPTOCURRENCY. DESIGNED FOR DESKTOP AND MOBILE, TIME2TRAVEL BRINGS TRAVEL PLANNING AND CRYPTO PAYMENTS TOGETHER IN ONE PLATFORM."
+      },
+      {
+        "index": "02",
+        "title": "BFICOIN",
+        "subtitle": "CRYPTOCURRENCY ECOSYSTEM WEBSITE",
+        "url": "https://bfic.netlify.app/",
+        "image": "/mock-work-images/image-2.webp",
+        "alt": "BFICOIN website shown on a desktop monitor",
+        "copy": "A WEBSITE SHOWCASING BFICOIN AND ITS CRYPTOCURRENCY ECOSYSTEM. BOLD VISUALS AND CLEAR NAVIGATION INTRODUCE THE COIN’S UTILITY, HELPING VISITORS EXPLORE THE PROJECT, ACCESS ITS WHITEPAPER, AND FIND LINKS TO BUY BFIC."
+      },
+      {
+        "index": "03",
+        "title": "SPARKIT",
+        "subtitle": "AI-POWERED FASHION WEB APP",
+        "url": "https://www.sparkit.world/",
+        "image": "/mock-work-images/image-3.webp",
+        "alt": "SPARKIT website shown on a desktop monitor",
+        "copy": "A WEB PLATFORM CONNECTING FASHION CREATORS AND SHOPPERS. USERS CAN EXPLORE COLLECTIONS, DISCOVER INDEPENDENT DESIGNERS, AND SHOP ORIGINAL PIECES, WHILE CREATORS USE AI DESIGN TOOLS TO TURN IDEAS INTO PRODUCTS AND LAUNCH THEIR OWN BRANDS."
+      },
+      {
+        "index": "04",
+        "title": "SPARKIT",
+        "subtitle": "AI-POWERED FASHION MOBILE APP",
+        "url": "https://www.sparkit.world/",
+        "image": "/mock-work-images/image-4.webp",
+        "alt": "SPARKIT website shown on a mobile device",
+        "copy": "AN IOS AND ANDROID APP THAT HELPS CREATORS TURN IDEAS INTO FASHION BRANDS. SPARKIT COMBINES AI-ASSISTED CLOTHING DESIGN, MANUFACTURING CONNECTIONS, AND AN INTEGRATED MARKETPLACE, ALLOWING USERS TO CREATE, PRODUCE, AND SELL THEIR COLLECTIONS FROM THEIR PHONE."
+      }
+    ]
+  },
+  "quote": {
+    "text": "\"Alarm bells are ringing, Willie\""
+  },
+  "footer": {
+    "wordmark": "R/JEHAD",
+    "lead": "Let me Run your next project!",
+    "sublead": "It's the one you didn't expect. Not in the spotlight, but out there on the edge.",
+    "linksTitle": "Links",
+    "contactTitle": "Contact",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "Email",
+    "sendLabel": "Send",
+    "languageTitle": "Language",
+    "contactLinks": [
+      {
+        "label": "Linkedin",
+        "href": "https://www.linkedin.com/in/je7d"
+      }
+    ]
+  }
+}

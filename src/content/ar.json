@@ -1,0 +1,219 @@
+{
+  "site": {
+    "name": "جهاد هلوى",
+    "navigation": [
+      {
+        "label": "نبذة",
+        "href": "#about"
+      },
+      {
+        "label": "أدوات",
+        "href": "#tools"
+      },
+      {
+        "label": "أعمال",
+        "href": "#work"
+      },
+      {
+        "label": "لنُنشئ شيئًا معًا",
+        "href": "mailto:jehad.hlewi22@gmail.com",
+        "className": "topbar-link-create"
+      }
+    ]
+  },
+  "hero": {
+    "titleTop": "إبداعي",
+    "titleBottom": "مطور",
+    "name": ["روبرت", "أبيريوس"],
+    "aboutLabel": "نبذة",
+    "locationPrefix": "الموقع",
+    "locations": [
+      {
+        "label": "الإمارات",
+        "timeZone": "Asia/Dubai"
+      },
+      {
+        "label": "المغرب",
+        "timeZone": "Africa/Casablanca"
+      },
+      {
+        "label": "كندا",
+        "timeZone": "America/Toronto"
+      }
+    ],
+    "music": {
+      "tracks": [
+        {
+          "src": "/music/Darling - Tulipa Moves - 03 So Did We.mp3",
+          "artist": "Darling - Tulipa Moves",
+          "title": "So Did We",
+          "reactiveMode": "detail"
+        },
+        {
+          "src": "/music/The Wamdue Kids - In My Soul (3c Deep Mix) - TheDrMiam.mp3",
+          "artist": "The Wamdue Kids",
+          "title": "In My Soul (3c Deep Mix)",
+          "reactiveMode": "detail"
+        },
+        {
+          "src": "/music/SP101 - Dreamstate.mp3",
+          "artist": "SP101",
+          "title": "Dreamstate",
+          "reactiveMode": "thump"
+        }
+      ]
+    },
+    "copy": "أبني تجارب رقمية مؤثرة عبر حركة مدروسة، طباعة قوية، وتقنيات أمامية حديثة للعلامات التجارية والحملات والمنتجات الرقمية عبر الويب والمساحات التفاعلية."
+  },
+  "about": {
+    "sectionId": "about",
+    "headings": {
+      "left": "أفكار مدروسة تُصاغ بمعنى",
+      "right": "أنظمة جريئة تدعم الانتباه"
+    },
+    "gallery": {
+      "workMark": "أعمال",
+      "images": [
+        {
+          "src": "/media/side-1.webp",
+          "alt": "صورة جانبية أولى"
+        },
+        {
+          "src": "/media/me-2.webp",
+          "alt": "صورة روبرت أبيريوس"
+        },
+        {
+          "src": "/media/side-2.webp",
+          "alt": "صورة جانبية ثانية"
+        }
+      ]
+    },
+    "tools": {
+      "label": "أدوات",
+      "items": [
+        {
+          "index": "00",
+          "title": "Runman",
+          "subtitle": "علامة حركة",
+          "lottie": "/assets/lottie/runman02.json",
+          "copy": "علامة حركة خفيفة ومتكررة تُستخدم كمدخل لقائمة الأدوات. تضع الإيقاع قبل بدء دراسات الفيديو، وتبقي القسم حيًا منذ الإطار الأول."
+        },
+        {
+          "index": "01",
+          "title": "Chroma Warp",
+          "subtitle": "نوع ووسائط",
+          "video": "/assets/Clips/image-text.mp4",
+          "copy": "دراسة حركة تدمج نسيج الصورة مع تصميم خط حي. بُنيت كأداة بصرية قابلة لإعادة الاستخدام لاختبارات توجيه فني سريعة، تجمع بين الوسائط الطبقية، والنصوص المتجاوبة، والجدولة المديرة بالسكريبت."
+        },
+        {
+          "index": "02",
+          "title": "Split Mask",
+          "subtitle": "كشف تفاعلي",
+          "video": "/assets/Clips/open.mp4",
+          "copy": "نموذج تفاعل صغير للفتح والقناع والكشف عن المحتوى. صُمم حول حالات حركة نظيفة، ومنطق تخطيط مرن، وبنية بسيطة قابلة لإعادة الاستخدام عبر العناصر الرقمية."
+        },
+        {
+          "index": "03",
+          "title": "Text Maze",
+          "subtitle": "نظام مولد",
+          "video": "/assets/Clips/remix-maze.mp4",
+          "copy": "أداة إعادة مزج تشبه المتاهة مبنية للتنوع البصري المرن. تستخدم برمجة واجهات حديثة، وسلوك تخطيط إجرائي، وقواعد رسومية يمكن أن تتغير بسرعة دون فقدان النظام العام."
+        },
+        {
+          "index": "04",
+          "title": "Whale",
+          "subtitle": "اختبار حركة ثلاثي الأبعاد",
+          "video": "/assets/Clips/whale.mp4",
+          "copy": "تجربة حركة نحتية تركز على الوزن والعمق والحركة الجوّية. بُنيت كاختبار بصري مناسب للمتصفح باستخدام سكربتات حديثة وتوقيت تحريك متحكم به."
+        }
+      ]
+    },
+    "skills": [
+      {
+        "index": "01",
+        "title": "أنظمة بصرية",
+        "copy": "بناء توجيه فني واضح، تركيبة قوية، وهوية رقمية تبدو مميزة ومقصودة."
+      },
+      {
+        "index": "02",
+        "title": "حرفة الواجهة الأمامية",
+        "copy": "تطوير واجهات متجاوبة بتفاصيل مدروسة، أداء سلس، وتنفيذ دقيق."
+      },
+      {
+        "index": "03",
+        "title": "لغة الحركة",
+        "copy": "استخدام الحركة والتفاعل لتوجيه الانتباه، إضافة الجو، وجعل العمل يبدو حيًا."
+      },
+      {
+        "index": "04",
+        "title": "حضور العلامة",
+        "copy": "ترجمة الأفكار إلى إطلاقات وحملات وسطوح منتجات مصقولة تبدو متماسكة عبر نقاط التفاعل."
+      },
+      {
+        "index": "05",
+        "title": "من الفكرة إلى الشكل",
+        "copy": "تشكيل الأفكار المبكرة إلى أنظمة بصرية واضحة تبقى مرنة وقصديّة ومهيّأة للتطور."
+      }
+    ]
+  },
+  "projects": {
+    "items": [
+      {
+        "index": "01",
+        "title": "Dash",
+        "subtitle": "بنية استوديو Webflow",
+        "url": "https://www.dashcreative.co/",
+        "image": "/mock-work-images/Dash.webp",
+        "alt": "موقع Dash يظهر على شاشة سطح مكتب",
+        "copy": "قالب مخصص لـ Webflow تم تصميمه لاستوديو إبداعي حديث. بُني باستخدام هيكل CMS دقيق، وأقسام قابلة لإعادة الاستخدام، وتفاصيل حركة مدارة بالسكريبت تحافظ على السرعة واللمعان وسهولة التوسع."
+      },
+      {
+        "index": "02",
+        "title": "Racepoint",
+        "subtitle": "نظام تحرير Webflow",
+        "url": "https://racepointglobal.com/",
+        "image": "/mock-work-images/",
+        "alt": "موقع Racepoint يظهر على شاشة لابتوب",
+        "copy": "موقع Webflow بنظام بصري افتتاحي، وقوالب صفحات مخصصة، وبنية مكونات مرنة. التفاعلات الحديثة والسكريبتات الخفيفة تمنح التخطيط حركة دون فقدان طابع العلامة النظيف والثقة."
+      },
+      {
+        "index": "03",
+        "title": "Commuter",
+        "subtitle": "ملف أفلام Webflow",
+        "url": "https://www.commuterfilms.co.uk/",
+        "image": "/mock-work-images/Commuter.webp",
+        "alt": "موقع Commuter يظهر على شاشة سطح مكتب",
+        "copy": "ملف أفلام سينمائي في Webflow بُني حول عرض غامر للمشاريع. القوالب المخصصة، ووسائط CMS، وتحسينات السكربتات الحديثة تعطي الموقع إيقاعًا جريئًا مع إبقاء التحديثات مباشرة وسهلة."
+      },
+      {
+        "index": "04",
+        "title": "Roger W Smith",
+        "subtitle": "أرشيف فاخر Webflow",
+        "url": "https://rwsmithwatches.com/",
+        "image": "/mock-work-images/Roger.webp",
+        "alt": "موقع Roger W Smith مع صور ساعة",
+        "copy": "بناء Webflow مصقول لعلامة ساعات فاخرة، تم تصميمه حول الجو، التفاصيل، والإيقاع المتحكم فيه. يستخدم الموقع قوالب مخصصة، ومحتوى منظم، وسكريبتات حديثة دقيقة لدعم تجربة أرشيفية غنية."
+      }
+    ]
+  },
+  "quote": {
+    "text": "\"أجراس الإنذار تدق، وايلي\""
+  },
+  "footer": {
+    "wordmark": "/ جهاد",
+    "lead": "دعني أطور مشروعك القادم!",
+    "sublead": "إنه المشروع الذي لم تتوقعه. ليس في دائرة الضوء، بل على حافة الطريق.",
+    "linksTitle": "روابط",
+    "contactTitle": "تواصل",
+    "emailLabel": "عنوان البريد الإلكتروني",
+    "emailPlaceholder": "البريد الإلكتروني",
+    "sendLabel": "إرسال",
+    "languageTitle": "اللغة",
+    "contactLinks": [
+      {
+        "label": "Linkedin",
+        "href": "https://www.linkedin.com/in/je7d"
+      }
+    ]
+  }
+}
