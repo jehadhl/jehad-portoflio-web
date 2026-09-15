@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import type { SiteContent, Tool } from "@/content";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import * as responsive from "@/hooks/use-responsive";
@@ -250,8 +251,13 @@ function ScrollHeading({ children: children, className = "" }) {
     </h2>
   );
 }
-/** @param {{content: import("@/content").SiteContent["about"], projectItems?: import("@/content").Tool[]}} props */
-function About({ content: content, projectItems = [] }) {
+function About({
+  content,
+  projectItems = [] as Tool[],
+}: {
+  content: SiteContent["about"];
+  projectItems?: Tool[];
+}) {
   let i = React.useRef(null),
     r = React.useRef([]),
     s = React.useRef([]),

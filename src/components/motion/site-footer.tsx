@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import type { Language, SiteContent } from "@/content";
 import lottie from "@/lib/lottie-client";
 import { settings } from "@/content/settings";
 import { isSectionLink, requestSectionTransition } from "./section-navigation";
@@ -11,13 +12,18 @@ let FOOTER_PIXEL_PATTERN = [
   "011111011011101111011110",
   "111111111111111111111111",
 ];
-/** @param {{activeLanguage?: import("@/content").Language, content: import("@/content").SiteContent["footer"], languageOptions?: {code: import("@/content").Language, label: string}[], onLanguageChange?: (language: string) => void, site: import("@/content").SiteContent["site"]}} props */
 function SiteFooter({
-  activeLanguage = "en",
-  content: content,
-  languageOptions = [],
-  onLanguageChange: onLanguageChange,
-  site: site,
+  activeLanguage = "en" as Language,
+  content,
+  languageOptions = [] as Array<{ code: Language; label: string }>,
+  onLanguageChange,
+  site,
+}: {
+  activeLanguage?: Language;
+  content: SiteContent["footer"];
+  languageOptions?: Array<{ code: Language; label: string }>;
+  onLanguageChange?: (language: string) => void;
+  site: SiteContent["site"];
 }) {
   let n = React.useRef(null),
     a = React.useRef(null),

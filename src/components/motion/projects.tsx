@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import type { Project } from "@/content";
 import { calculatePixelGrid, buildPixelCells } from "./pixel-grid";
 import { MediaHoverPixels } from "./hover-pixels";
 import { useScrollProgress } from "./scroll-progress";
@@ -141,7 +142,13 @@ function ProjectPixelTransition({
     </div>
   );
 }
-function ProjectCycle({ items = [], workLabel = "Work" }) {
+function ProjectCycle({
+  items = [] as Project[],
+  workLabel = "Work",
+}: {
+  items?: Project[];
+  workLabel?: string;
+}) {
   let i = React.useRef(null),
     r = Math.max(items.length - 1, 1),
     s = 100 + 40 * r,
@@ -301,7 +308,7 @@ function ProjectCycle({ items = [], workLabel = "Work" }) {
     </div>
   );
 }
-function ProjectCard({ project: project }) {
+function ProjectCard({ project }: { project: Project }) {
   let e = React.useRef(null);
   if (!project) return null;
   let [i, r] = splitProjectIndex(project.index);
@@ -349,8 +356,13 @@ function ProjectCard({ project: project }) {
     </article>
   );
 }
-/** @param {{items?: import("@/content").Project[], workLabel?: string}} props */
-function Projects({ items = [], workLabel = "Work" }) {
+function Projects({
+  items = [] as Project[],
+  workLabel = "Work",
+}: {
+  items?: Project[];
+  workLabel?: string;
+}) {
   return items.length ? (
     <section id="work" className="projects-section">
       <div className="projects-desktop">

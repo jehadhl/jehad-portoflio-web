@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import type { Tool } from "@/content";
 import gsap from "gsap";
 import lottie from "@/lib/lottie-client";
 import { calculatePixelGrid, buildPixelCells } from "./pixel-grid";
@@ -174,7 +175,7 @@ function renderToolMedia(t, e, i, r) {
     <img src={t?.image} alt={t?.alt} className="tools-strip-media-asset" />
   );
 }
-function ToolsReel({ items = [] }) {
+function ToolsReel({ items = [] as Tool[] }: { items?: Tool[] }) {
   let e = React.useRef(null),
     i = React.useRef(null),
     r = React.useRef([]),

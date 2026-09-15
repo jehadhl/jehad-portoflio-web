@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import type { NavigationItem } from "@/content";
 import gsap from "gsap";
 import * as responsive from "@/hooks/use-responsive";
 import {
@@ -37,8 +38,13 @@ let buildMenuCell = ({ index: t, row: e, col: i, rows: r }) => {
     closeDelay: `${a + o}s`,
   };
 };
-/** @param {{name?: string, links?: import("@/content").NavigationItem[]}} props */
-function SiteHeader({ name = "", links = [] }) {
+function SiteHeader({
+  name = "",
+  links = [] as NavigationItem[],
+}: {
+  name?: string;
+  links?: NavigationItem[];
+}) {
   let i = React.useRef(null),
     r = React.useRef(0),
     s = React.useRef(null),
