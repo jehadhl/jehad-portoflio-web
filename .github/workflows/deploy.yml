@@ -10,7 +10,7 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  ECR_REPOSITORY: portfolio-app
+  ECR_REPOSITORY: portfolio
   CONTAINER_NAME: portfolio-app
   CONTAINER_PORT: 3000
 
