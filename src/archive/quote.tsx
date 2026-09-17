@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import gsap from "gsap";
-import { useReducedMotion } from "@/hooks/use-reduced-motion";
+import { useReducedMotion } from "@/archive/use-reduced-motion";
 
 export function Quote({ text }: { text: string }) {
   const root = useRef<HTMLElement>(null);

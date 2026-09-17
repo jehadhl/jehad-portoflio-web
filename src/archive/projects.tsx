@@ -2,7 +2,7 @@
 
 import type { CSSProperties } from "react";
 import type { Project } from "@/content";
-import { useScrollIndex } from "@/hooks/use-scroll-index";
+import { useScrollIndex } from "@/archive/use-scroll-index";
 import { PixelImage } from "./pixel-image";
 
 function ProjectLink({ project }: { project: Project }) {

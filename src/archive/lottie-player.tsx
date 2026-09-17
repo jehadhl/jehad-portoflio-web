@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import type { AnimationItem } from "lottie-web";
-import { useReducedMotion } from "@/hooks/use-reduced-motion";
+import { useReducedMotion } from "@/archive/use-reduced-motion";
 
 export function LottiePlayer({
   src,

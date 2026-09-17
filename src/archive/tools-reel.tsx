@@ -3,8 +3,8 @@
 import { useEffect, useRef, type CSSProperties } from "react";
 import gsap from "gsap";
 import type { Tool } from "@/content";
-import { useScrollIndex } from "@/hooks/use-scroll-index";
-import { useReducedMotion } from "@/hooks/use-reduced-motion";
+import { useScrollIndex } from "@/archive/use-scroll-index";
+import { useReducedMotion } from "@/archive/use-reduced-motion";
 import { LottiePlayer } from "./lottie-player";
 
 function VideoStudy({

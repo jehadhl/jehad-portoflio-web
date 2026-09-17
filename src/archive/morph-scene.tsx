@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useReducedMotion } from "@/hooks/use-reduced-motion";
+import { useReducedMotion } from "@/archive/use-reduced-motion";
 
 /** Loads the readable Three.js scene from src/lib/morph only in the browser. */
 export function MorphScene() {

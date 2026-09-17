@@ -1,56 +1,105 @@
-name: Build and Deploy to ECR & EC2
+name: Build and Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  build-and-push:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
 
+    steps:
+      # 1. Checkout source code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Configure AWS credentials
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
+      # 3. Login to ECR
       - name: Login to Amazon ECR
         id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
+        uses: aws-actions/amazon-ecr-login@v2
 
-      - name: Build, tag, and push image to Amazon ECR
+      # 4. Build and push Docker image
+      - name: Build and push image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
           IMAGE_TAG: ${{ github.sha }}
+
         run: |
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-          docker tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:latest
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          IMAGE=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+
+          echo "Building image: $IMAGE"
+
+          docker build \
+            --pull \
+            -t $IMAGE \
+            .
+
+          docker push $IMAGE
+
+          # Optional: keep latest tag
+          docker tag $IMAGE $ECR_REGISTRY/$ECR_REPOSITORY:latest
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
 
+      # 5. Deploy to EC2
       - name: Deploy to EC2
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          envs: ECR_REGISTRY,ECR_REPOSITORY,IMAGE_TAG,AWS_ACCESS_KEY_ID,AWS_SECRET_ACCESS_KEY
-          env_format: export {0}={1}
+
           script: |
-            export ECR_REGISTRY=${{ steps.login-ecr.outputs.registry }}
-            export ECR_REPOSITORY=${{ secrets.ECR_REPOSITORY }}
-            export IMAGE_TAG=${{ github.sha }}
-            export AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}
-            export AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
-            export AWS_DEFAULT_REGION=us-east-1
-            aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin $ECR_REGISTRY
-            docker pull $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-            docker stop portfolio-app || true
+            set -e
+
+            # Variables
+            AWS_REGION="${{ secrets.AWS_REGION }}"
+            ECR_REGISTRY="${{ steps.login-ecr.outputs.registry }}"
+            ECR_REPOSITORY="${{ secrets.ECR_REPOSITORY }}"
+            IMAGE_TAG="${{ github.sha }}"
+
+            IMAGE="$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+
+            echo "Deploying image: $IMAGE"
+
+            # Login to ECR
+            aws ecr get-login-password \
+              --region "$AWS_REGION" | \
+              docker login \
+              --username AWS \
+              --password-stdin "$ECR_REGISTRY"
+
+            # Pull exact version
+            docker pull "$IMAGE"
+
+            # Stop old container
+            docker stop -t 30 portfolio-app || true
+
+            # Remove old container
             docker rm portfolio-app || true
-            docker run -d --name portfolio-app -p 3000:3000 $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+
+            # Start new container
+            docker run -d \
+              --name portfolio-app \
+              --restart unless-stopped \
+              -p 80:80 \
+              -p 443:443 \
+              -v /etc/letsencrypt:/etc/nginx/ssl:ro \
+              -v /var/log/nginx:/var/log/nginx \
+              -e NODE_ENV=production \
+              "$IMAGE"
+
+            # Show running container
+            docker ps --filter "name=portfolio-app"
+
+            # Cleanup unused images
+            docker image prune -f
